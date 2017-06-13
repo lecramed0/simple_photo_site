@@ -1,0 +1,212 @@
+/*<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif|Source+Code+Pro" rel="stylesheet">*/
+/*
+font-family: 'Noto Serif', serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Source Code Pro', monospace;
+*/
+
+body {
+    background-color: #828282;
+}
+
+h1 {
+    color: blue;
+    font-family: 'Noto Serif', serif;
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+}
+
+h2 {
+    color: black;
+    font-family: "Noto Sans", sans-serif;
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+}
+
+h3 {
+    color: #595959;
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 0.75em;
+    margin-bottom: 0;
+    margin-left: 6em;
+}
+
+h4 {
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 10em;
+}
+
+p {
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 0;
+}
+
+bld {
+    font-weight: bold;
+}
+
+itl {
+    font-style: italic;
+}
+
+emp {
+    text-decoration: underline;
+    text-decoration-color: cyan;
+}
+
+str {
+    font-weight: bold;
+    font-style: italic;
+}
+
+strR {
+    font-weight: bold;
+    font-style: italic;
+    color: RED;
+}
+
+strB {
+    font-weight: bold;
+    font-style: italic;
+    color: BLUE;
+}
+
+#Mono {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 110%;
+    color: green;
+}
+
+#leftAlign {
+    text-align: left;
+    padding: 3em 10em;
+}
+
+#container { /*required to center the contentbox*/
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#contentbox {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 3em 15em;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    padding: 6em;
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    background-color: gold;
+    color: black;
+    text-decoration: none;
+    font-style: sans-serif;
+    font-size: 115%;
+    width: 30%;
+    min-width: 50em;
+    margin: 4em;
+    padding: 5em 5em
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+    list-style-position: inside;
+    list-style: circle;
+    padding: 0em 8em;
+    margin-top: 0;
+    width: 80%;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+ul>li>ul { /*drilling down the list for styling*/
+    list-style: disc;
+}
+
+
+table.header {
+    font-weight: bold;
+    background-color: lightblue;
+}
+
+#dynamicButton:hover {
+    background-color: #181818;
+    color: white;
+}
+
+#dynamicButton:active {
+    background-color: teal;
+    color: white;
+}
+
+a:link {
+    display: inline;
+    color: lightgreen;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:visited:hover {
+    color: orange;
+}
+
+footer {
+    flex: none;
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 80%;
+    text-align: inherit;
+    padding: 3em 0em 8em 0em;
+}
+
+@media screen and (max-width: 1080px){ /*iphone 6 plus*/
+    body {
+        background-color: #cc0000;
+        font-size: 90%;
+    }
+
+    #contentbox {
+        margin: 8em 12em;
+    }
+
+}
+
+@media screen and (max-width: 640px){ /*iphone 5 "actual" (max-device-width: 568px)*/
+    body {
+        background-color: #cc00cc;
+        font-size: 80%;
+    }
+
+    h2 {
+        font-size: 110%;
+    }
+
+    #contentbox {
+        margin: 0.5em 0.5em;
+        padding: 0.5em;
+    }
+
+    .button {
+        width: 50%;
+        min-width: 40em;
+        margin: 3em 0em;
+    }
+}
