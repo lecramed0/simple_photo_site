@@ -1,8 +1,16 @@
-/*<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif|Source+Code+Pro" rel="stylesheet">*/
+/*
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif|Source+Code+Pro|Tangerine" rel="stylesheet">
+alternately, remove the logo font from above (Tangerine) and optimize the logo text only to speed up loads:
+<link href="https://fonts.googleapis.com/css?family=Tangerine&text=The%20Simple%20Photo%20Site" rel="stylesheet">
+or use a font effect:
+https://fonts.googleapis.com/css?family=Tangerine&effect=anaglyph
+<div class="font-effect-anaglyph">This is a font effect!<div>
+*/
 /*
 font-family: 'Noto Serif', serif;
 font-family: 'Noto Sans', sans-serif;
 font-family: 'Source Code Pro', monospace;
+font-family: 'Tangerine', cursive;
 */
 
 body {
@@ -13,14 +21,14 @@ h1 {
     color: blue;
     font-family: 'Noto Serif', serif;
     margin-top: 0.5em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 h2 {
     color: black;
     font-family: "Noto Sans", sans-serif;
     margin-top: 0.5em;
-    margin-bottom: 3em;
+    margin-bottom: 0.75em;
 }
 
 h3 {
@@ -28,13 +36,13 @@ h3 {
     font-family: 'Noto Sans', sans-serif;
     margin-top: 0.75em;
     margin-bottom: 0;
-    margin-left: 6em;
+    margin-left: 0.5em;
 }
 
 h4 {
     color: black;
     font-family: 'Noto Sans', sans-serif;
-    margin-left: 10em;
+    margin-left: 1em;
 }
 
 p {
@@ -84,6 +92,10 @@ strB {
     padding: 3em 10em;
 }
 
+#blankLink {
+    color: black;
+}
+
 #container { /*required to center the contentbox*/
     display: flex;
     justify-content: center;
@@ -113,7 +125,7 @@ strB {
     width: 30%;
     min-width: 50em;
     margin: 4em;
-    padding: 5em 5em
+    padding: 1em 4em
 }
 
 ul {
@@ -166,6 +178,11 @@ a:hover {
 
 a:visited:hover {
     color: orange;
+}
+
+.logo {
+    font-family: 'Tangerine', cursive;
+    color: black;
 }
 
 footer {
