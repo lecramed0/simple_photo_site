@@ -3,5 +3,5 @@
 <?php include ROOTDIRECTORY.'/includes/head.php'; ?>
 <body>
     <div id="container">
-        <div id="appbox">
+        <div id="contentbox"
             <?php include ROOTDIRECTORY.'/includes/header.php'; ?>

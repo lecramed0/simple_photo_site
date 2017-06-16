@@ -87,8 +87,8 @@ strB {
     color: green;
 }
 
-#leftAlign {
-    text-align: left;
+#centerAlign {
+    text-align: center;
     padding: 3em 10em;
 }
 
@@ -97,21 +97,23 @@ strB {
 }
 
 #container { /*required to center the contentbox*/
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
+    background-color: pink;
     width: 100%;
 }
 
 #contentbox {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
     margin: 3em 15em;
-    background-color: white;
-    text-align: center;
+    background-color: lightblue;
+    text-align: left;
     width: 100%;
     padding: 6em;
+}
+
+.nav {
+    align-items: center;
 }
 
 .button {
@@ -186,7 +188,6 @@ a:visited:hover {
 }
 
 footer {
-    flex: none;
     color: black;
     font-family: 'Source Code Pro', monospace;
     font-size: 80%;
