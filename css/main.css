@@ -97,7 +97,6 @@ strB {
 }
 
 #container { /*required to center the contentbox*/
-    display: -webkit-flex;
     display: flex;
     justify-content: center;
     background-color: pink;
@@ -105,29 +104,30 @@ strB {
 }
 
 #contentbox {
-    margin: 3em 15em;
     background-color: lightblue;
     text-align: left;
-    width: 100%;
+    width: 80%;
     padding: 6em;
 }
 
 .nav {
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    width: 100%;
 }
 
 .button {
-    display: inline-block;
     border: none;
     background-color: gold;
     color: black;
     text-decoration: none;
-    font-style: sans-serif;
-    font-size: 115%;
-    width: 30%;
-    min-width: 50em;
-    margin: 4em;
-    padding: 1em 4em
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    width: 20%;
+    min-width: 6em;
+    margin: 1em;
+    padding: 0.125em 0 1em 0;
 }
 
 ul {
@@ -202,7 +202,15 @@ footer {
     }
 
     #contentbox {
-        margin: 8em 12em;
+        background-color: lightblue;
+        text-align: left;
+        width: 95%;
+        padding: 6em;
+    }
+
+    .button {
+        width: 40%;
+        padding: 0.75em 0 1em 0;
     }
 
 }
@@ -217,14 +225,10 @@ footer {
         font-size: 110%;
     }
 
-    #contentbox {
-        margin: 0.5em 0.5em;
-        padding: 0.5em;
-    }
-
     .button {
-        width: 50%;
-        min-width: 40em;
-        margin: 3em 0em;
+        width: 40%;
+        min-width: 6em;
+        margin: 0.25em;
+        padding: 1em 0 1em 0;
     }
 }
